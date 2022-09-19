@@ -1,0 +1,86 @@
+input,
+textarea {
+    display: block;
+    padding: 8px;
+    border: 1px solid #efefef;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.contact,
+.contact-me__content,
+.contact-me__cta,
+.newsletter {
+    padding: 20px;
+}
+
+.content-me__lead,
+.newsletter-lead {
+    margin-top: 0;
+    padding: 6.6vmax 0 3.3vmax;
+}
+
+.contact-me__about,
+.newsletter-description {
+    padding-bottom: 3.3vmax;
+}
+
+.contact-me__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.contact-me__form > * {
+    width: 100%;
+}
+.contact-me__form > * + * {
+    padding-top: 20px;
+}
+
+.contact-me__email #email,
+.contact-me__message #message {
+    width: 95%;
+}
+
+.contact-me__name {
+    display: flex;
+    flex: 1 1;
+}
+
+.contact-me__lastname {
+    margin-left: 8px;
+}
+
+.contact-me__btn,
+.newsletter-btn {
+    padding: 16px;
+    border: 1px solid #efefef;
+    cursor: pointer;
+}
+
+.newsletter #newsletter-email {
+    width: 80%;
+    padding: 16px;
+    margin-bottom: 3.3vmax;
+}
+
+@media (min-width: 768px) {
+    .contact-me__wrapper,
+    .newsletter {
+        display: flex;
+        padding: 3.3vmax;
+    }
+
+    .content-me__lead {
+        padding-top: 0;
+    }
+    .contact-me__wrapper > *,
+    .newsletter > * {
+        flex: 1;
+    }
+}

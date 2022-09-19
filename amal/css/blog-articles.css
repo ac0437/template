@@ -1,0 +1,18 @@
+.blog-page {
+    padding: calc(6.6vmax * 2) 6.6vmax;
+}
+
+.blog-page__description {
+    padding-bottom: 3.3vmax;
+}
+.blog-page__next {
+    display: flex;
+    justify-content: end;
+    padding: calc(6.6vmax / 2);
+}
+
+.blog-page__next-link {
+    text-decoration: none;
+    
+}
+

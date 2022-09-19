@@ -1,0 +1,47 @@
+.amal,
+.tech,
+.events {
+    padding: 20px;
+}
+
+.hero-lead {
+    padding: 6.6vmax 0;
+}
+
+.hero-specialities__description > * + * {
+    padding-top: 16px;
+}
+
+.tech-blog,
+.speaking-event,
+.tech-blog__lead,
+.speaking-event__lead {
+    margin: 48px 0;
+}
+
+.tech-blog__title,
+.speaking-event__title {
+    margin: 8px 0;
+}
+
+@media (min-width: 768px) {
+    .hero,
+    .tech,
+    .events {
+        padding: 0 6.6vmax;
+    }
+    .hero-mission__content,
+    .hero-specialties-content,
+    .tech,
+    .events {
+        display: flex;
+    }
+
+    .hero-mission__content > *,
+    .hero-specialties-content > *,
+    .tech > *,
+    .events > * {
+        flex: 1;
+    }
+}
+

@@ -1,0 +1,29 @@
+.blog,
+.article {
+    padding: 20px;
+}
+
+.article-image {
+    width: 100%;
+    object-position: 50% 50%;
+    object-fit: cover;
+}
+
+.article-title {
+    margin-bottom: 32px;
+}
+
+.article-read-more__link {
+    text-decoration: underline dotted;
+}
+
+@media (min-width: 768px) {
+    .article-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .article-content > * {
+        width: 40%;
+    }
+}

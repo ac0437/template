@@ -1,0 +1,38 @@
+.events {
+    padding: 20px;
+}
+
+.speaking-event__lead {
+    padding: 6.6vmax 0;
+}
+
+.speaking-event__date {
+    margin-bottom: 0;
+}
+
+.speaking-event__location {
+    margin-top: 0;
+}
+
+.speaking-events__cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6.6vmax 0;
+}
+
+@media (min-width: 768px) {
+   .speaking-events {
+       padding: 0 6.6vmax;
+   }
+
+   .speaking-event__content {
+        display: flex;
+   }
+
+   .speaking-event__content > * {
+       flex: 1;
+       margin-bottom: 3.3vw;
+   }
+}

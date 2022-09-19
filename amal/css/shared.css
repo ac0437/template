@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --clr-primary: #f08e80; 
+    --clr-secondary: #fdefe6;
+    --clr-dark: #000;
+    --clr-light: #fff;
+
+    --font-primary: 'Brygada 1918', serif;
+    --font-secondary: 'Josefin Slab', serif;
+
+    --font-size-x-sm: calc((0.24 - 1) * 1.2vw + 1rem);
+    --font-size-sm: calc((1.2 - 1) * 1.2vw + 1rem);
+    --font-size-md: calc((2 - 1) * 1.2vw + 1rem);
+    --font-size-lg: calc((2.2 - 1) * 1.2vw + 1rem);
+    --font-size-x-lg: calc((4 - 1) * 1.2vw + 1rem);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/* Utility */
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.bg-clr-primary {
+    background-color: var(--clr-primary)
+}
+
+.clr-primary {
+    color: var(--clr-primary)
+}
+
+.bg-clr-secondary {
+    background-color: var(--clr-secondary)
+}
+
+.clr-secondary {
+    color: var(--clr-secondary)
+}
+
+.bg-clr-dark {
+    background-color: var(--clr-dark)
+}
+
+.clr-dark {
+    color: var(--clr-dark)
+}
+
+.bg-clr-light {
+    background-color: var(--clr-light)
+}
+
+.clr-light {
+    color: var(--clr-light)
+}
+
+.f-secondary {
+    font-family: var(--font-primary);
+}
+
+.f-secondary {
+    font-family: var(--font-secondary);
+}
+
+.f-s-sm {
+    font-size: var(--font-size-sm);
+}
+
+.f-s-md {
+    font-size: var(--font-size-md);
+}
+.f-s-lg{
+    font-size: var(--font-size-lg);
+}
+.f-s-x-lg{
+    font-size: var(--font-size-x-lg);
+}
+
+/* Nav */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.nav-content {
+    padding: 8px 16px;
+}
+
+.nav-content > * + * {
+    padding-left: 16px;
+}
+
+.nav-content__link {
+    text-decoration: none;
+}
+
+.nav-logo {
+    font-weight: 500;
+}
+
+.nav-cta__btn {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav-hamburger__btn {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.nav-hamburger__btn:hover,
+.mobile-nav__btn:hover  {
+    opacity: 0.8;
+}
+
+.mobile-nav {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+.mobile-nav__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.mobile-nav__link {
+    margin-bottom: 18px;
+}
+
+.mobile-nav__btn {
+    margin-top: 25%;
+}
+
+/* Footer */
+.social-media {
+    padding: 84px 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media__link,
+.mobile-nav__link {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media__vertical-bar {
+    margin: 0 8px;
+}
+
+@media (min-width: 768px) {
+    .nav-content,
+    .nav-cta {
+        display: block;
+    }
+
+    .nav-hamburger__btn {
+        display: none;
+    }
+}
